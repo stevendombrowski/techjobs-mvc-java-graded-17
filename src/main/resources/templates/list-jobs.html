@@ -12,8 +12,8 @@
 
   <!-- TODO #1 - Use a loop to display job results in a table. -->
 
-    <div th:each="job: ${jobs}">
-      <table class="job-listing">
+    <div th:fragment="dataTable">
+      <table class="job-listing" th:each="job: ${jobs}" >
 <!--        <th:block th:each="job: ${jobs}">-->
           <tr>
             <th>ID</th>
